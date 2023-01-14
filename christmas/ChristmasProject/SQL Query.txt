@@ -1,0 +1,83 @@
+--  Christmas Project
+create database ChristProject;
+use ChristProject;
+
+## Registration Table 
+create table registration ( Name varchar(50),Mail varchar(50) primary key ,Mob varchar(50),Pass varchar(50));
+desc registration;
+select*from registration;
+drop table registration;
+
+## Booking table
+create table booking ( Um varchar(50),date varchar(50) ,price varchar(50),venue varchar(50),qty varchar(50));
+desc booking;
+select*from booking;
+drop table booking;
+
+## contact Table
+create table contact ( user_name varchar(50),email varchar(50) ,mob varchar(50),message varchar(500));
+desc contact;
+select*from contact;
+
+
+
+## insert record
+
+insert into booking values("adityabose7@gmail.com","31-12-2022","499","mumbai","2");
+
+insert into booking values("priya@gmail.com","1-12-2022","499","mumbai","2");
+
+insert into booking values("rahul@gmail.com","31-12-2022","999","kolkata","3");
+
+insert into booking values("Mahesh@gmail.com","31-20-2022","1299","delhi","1");
+
+insert into booking values("tanvi@gmail.com","31-12-2022","1599","bangalore","4");
+
+insert into booking values("abhinani24@gmail.com","31-12-2022","999","kolkata","5");
+
+insert into booking values("dameet6@gmail.com","31-12-2022","999","kolkata","2");
+
+insert into booking values("deepakjh69@gmail.com","31-12-2022","999","kolkata","5");
+
+insert into booking values("electronix84@gmail.com","31-12-2022","1299","delhi","1");
+
+insert into booking values("himanshusharma737@gmail.com","31-12-2022","1599","banglore","2");
+
+insert into booking values("jagroopgosal@gmail.com","31-12-2022","2599","mumbai","6");
+
+insert into booking values("jaiprakashjoshi8@gmail.com","31-12-2022","1599","bangalore","3");
+
+insert into booking values("mayurganje800@gmail.com","31-12-2022","499","mumbai","4");
+
+insert into booking values("nagarjuna.448@gmail.com","31-12-2022","999","kolkata","2");
+
+insert into booking values("nakul.pilwan@gmail.com","31-12-2022","499","mumbai","4");
+
+insert into booking values("narendrasxn@gmail.com","31-12-2022","1299","delhi","3");
+
+insert into booking values("panwar7166@gmail.com","31-12-2022","499","mumbai","2");
+
+insert into booking values("parvindersingh692@gmail.com","31-12-2022","999","kolkata","2");
+
+insert into booking values("pgmineblue@gmail.com","31-12-2022","1599","bangalore","3");
+
+insert into booking values("rahulraj0619@gmail.com","31-12-2022","999","kolkata","5");
+
+insert into booking values("rahulsb.1992@gmail.com","31-12-2022","1599","bangalore","5");
+
+insert into booking values("rahulsharma24jan@gmail.com","31-12-2022","499","mumbai","3");
+
+insert into booking values("rajat.yps@gmail.com","31-12-2022","2399","kolkata","9");
+
+insert into booking values("saiabhi007@gmail.com","31-12-2022","1299","delhi","5");
+
+insert into booking values("saketjittu53@gmail.com","31-12-2022","499","mumbai","4");
+
+insert into booking values("sumanjha665@gmail.com","31-12-2022","499","kolkata","3");
+
+insert into booking values("sunilkumarvtu229@gmail.com","31-12-2022","1299","delhi","3");
+
+insert into booking values("sunny.rawat143@gmail.com","31-12-2022","1599","bangalore","3");
+
+insert into booking values("yeas1987@gmail.com","31-12-2022","1599","bangalore","2");
+

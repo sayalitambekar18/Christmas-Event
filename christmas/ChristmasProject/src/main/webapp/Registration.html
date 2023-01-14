@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>RegistionForm</title>
+    <link rel="icon" href="./images/favicon.png">
+    <link href="https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css" rel="stylesheet">
+
+    <!-- bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!-- text animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkalami&family=Inter:wght@500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./CSS/Registration.css">
+   
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="85">
+    <div class="snowflake">
+    </div>
+    <header class="header_wrapper">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./resoureces/images/logo.png" class="img-fluid" alt="logo">
+                </a>
+                <button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-stream navbar-toggler-icon"></i>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html"><b>Login</b></a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="contact.html"><b>Contact</b></a>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="main">
+        <img src="./resoureces/images/merry-christmas.gif" height="100%" width="100%" />
+        <audio src="./resoureces/ton.mp3" autoplay="autoplay" loop="loop">sound</audio>
+        <div id="form" style=" opacity: 0.9;">
+        
+        
+            <form method="POST" name="myform" action="RegisterServlet" onsubmit="formValidation()">
+                <div class="img"><img
+                        src="https://see.fontimg.com/api/renderfont4/WyjGG/eyJyIjoiZnMiLCJoIjo2OSwidyI6MTAwMCwiZnMiOjY5LCJmZ2MiOiIjMDAwMDAwIiwiYmdjIjoiI0YzRUQ4QiIsInQiOjF9/TWVycnkgQ2hyaXN0bWFz/bambi-retro.png"
+                        alt="Retro fonts" width="250px"></div><br>
+                <h3 class="animate__animated animate__bounceIn" style="margin-bottom:20px;">𝗥𝗲𝗴𝗶𝘀𝘁𝗿𝗮𝘁𝗶𝗼𝗻
+                    𝗙𝗼𝗿𝗺</h3>
+                <label for="Uname">
+                    <input id="name" type="text" placeholder="User Name" name="Uname" required>
+                </label>
+                <p id="ans_name"></p>
+                <label for="Umail">
+                    <input id="email" type="email" placeholder="Email" name="Umail">
+                </label>
+                <p id="ans_email"></p>
+                <p id="ans_Mob"></p>
+                <label for="Mob">
+                    <input id="Mob" type="number" placeholder="Mob" name="Mob">
+                </label>
+                <p id="ans_Mob"></p>
+                <label for="Upass">
+                    <input id="pass" type="password" placeholder="Password" name="Upass" required>
+                </label>
+                <p id="ans_password"></p>
+                <label for="Cpassword">
+                    <input id="Cpassword" type="password" placeholder=" Confirm Password" name="Cpassword" required>
+                </label>
+                <p id="ans_Cpassword"></p>
+                <button class="glow-button" type="submit" value="submit" name="submit">𝕽𝖊𝖌𝖎𝖘𝖙𝖊𝖗</button>
+                <a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                        class="bi bi-house-heart-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M7.293 1.5a1 1 0 0 1 1.414 0L11 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l2.354 2.353a.5.5 0 0 1-.708.707L8 2.207 1.354 8.853a.5.5 0 1 1-.708-.707L7.293 1.5Z" />
+                        <path
+                            d="m14 9.293-6-6-6 6V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9.293Zm-6-.811c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.691 0-5.018Z" />
+                    </svg></a>
+                <br>
+            </form>
+        </div>
+    </div>
+    <!-- JavaScript code for validation  -->
+    <script>
+        function formValidation() {
+            var Mob = document.myform.Mob.value;
+            var password = document.myform.password.value;
+            var Cpassword = document.myform.Cpassword.value;
+            var name = document.myform.name.value;
+            var location = document.myform.location.value;
+            var letters = /^[A-Za-z]+$/;
+
+            if (!name.match(letters)) {
+                alert("Name should be characters only");
+                document.getElementById("ans_name").innerHTML = "Name-characters only";
+                return false;
+            } else if (isNaN(Mob)) {
+                alert("Enter Mobile No is Numeric value only & 10 digit");
+                document.getElementById("ans_Mob").innerHTML = "Mobile No-Numeric value only";
+                return false;
+            } else if (!location.match(letters)) {
+                alert("Location should be characters only");
+                document.getElementById("ans_location").innerHTML = "Location-characters only";
+                return false;
+            } else if (password.length <= 8) {
+                alert("Password must be at least 8 characters long.");
+                document.getElementById("ans_password").innerHTML = "Enter least 8 characters long";
+                return false;
+            } else if (password != Cpassword) {
+                alert("Password doesn't match ");
+                document.getElementById("ans_Cpassword").innerHTML = "Paswword doesn't match";
+                return false;
+            } else if (true) {
+                alert(" Registration Form Submitted Sucssesfully...Thank You !!");
+                return true;
+            }
+        }
+    </script>
+</body>
+
+</html>
